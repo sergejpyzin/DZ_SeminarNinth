@@ -17,7 +17,7 @@
         static void NaturalNumber(int number)
         {
             if (number <= 0) return;
-            Console.WriteLine(number);
+            Console.Write($"{number}, ");
             NaturalNumber(number - 1);
         }
 //          Задача 64: Задайте значение N.
@@ -26,7 +26,7 @@
 //          N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
         static void Main(string[] args)
         {
-            int number = GetNumberUserMassedge("Введите число: ");
+            int number = GetNumberUserMassedge("Введите максимальное значение диапазона ряда чисел: ");
             NaturalNumber(number);
         }
     }
